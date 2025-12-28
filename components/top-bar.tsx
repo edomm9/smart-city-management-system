@@ -33,10 +33,10 @@ export default function TopBar() {
             onChange={(e) => setCity(e.target.value)}
             className="bg-background border border-border rounded px-3 py-1 text-sm font-medium cursor-pointer"
           >
-            <option>Addis Ababa</option>
-            <option>Lagos</option>
-            <option>Nairobi</option>
-            <option>Cairo</option>
+            <option>Bole</option>
+            <option>Mexico</option>
+            <option>Jemo</option>
+            <option>Tulu Demtu</option>
           </select>
         </div>
         <div className="h-6 w-px bg-border" />
