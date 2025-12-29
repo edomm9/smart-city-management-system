@@ -13,10 +13,8 @@ const navigationItems = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "traffic-analytics", label: "Traffic Analytics", icon: BarChart3 },
   { id: "ai-models", label: "AI Models", icon: Brain },
-  { id: "edge-architecture", label: "Edge Architecture", icon: Network },
   { id: "sustainability", label: "Sustainability Metrics", icon: Leaf },
   { id: "system-health", label: "System Health", icon: Activity },
-  { id: "documentation", label: "Documentation", icon: BookOpen },
 ]
 
 export default function Sidebar({ currentPage, onPageChange }: SidebarProps) {
