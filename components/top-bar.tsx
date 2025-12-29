@@ -24,25 +24,25 @@ export default function TopBar() {
   }, [])
 
   return (
-    <div className="h-16 bg-card border-b border-border px-6 flex items-center justify-between">
+    <div className="h-16 bg-card border-b border-border px-6 flex items-center justify-between shadow-sm">
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
-          <MapPin className="w-4 h-4 text-primary" />
+          <MapPin className="w-4 h-4 text-primary font-semibold" />
           <select
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="bg-background border border-border rounded px-3 py-1 text-sm font-medium cursor-pointer"
+            className="bg-background border border-border rounded px-3 py-1 text-sm font-medium cursor-pointer hover:border-primary/50 transition-colors"
           >
-            <option>Bole</option>
-            <option>Mexico</option>
-            <option>Jemo</option>
-            <option>Tulu Demtu</option>
+            <option>Addis Ababa</option>
+            <option>Lagos</option>
+            <option>Nairobi</option>
+            <option>Cairo</option>
           </select>
         </div>
         <div className="h-6 w-px bg-border" />
-        <div className="flex items-center gap-2 px-3 py-1 rounded bg-primary/10">
+        <div className="flex items-center gap-2 px-3 py-1 rounded-md bg-primary/15 border border-primary/30">
           <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="text-sm font-medium text-primary">Operational</span>
+          <span className="text-sm font-medium text-primary font-semibold">Operational</span>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export default function TopBar() {
         <div className="h-6 w-px bg-border" />
         <div className="text-sm">
           <span className="text-muted-foreground">Role:</span>
-          <span className="ml-2 font-medium">Traffic Engineer</span>
+          <span className="ml-2 font-medium text-foreground">Traffic Engineer</span>
         </div>
       </div>
     </div>
