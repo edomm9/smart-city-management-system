@@ -16,7 +16,6 @@ const navigationItems = [
   { id: "edge-architecture", label: "Edge Architecture", icon: Network },
   { id: "sustainability", label: "Sustainability Metrics", icon: Leaf },
   { id: "system-health", label: "System Health", icon: Activity },
-  { id: "documentation", label: "Documentation", icon: BookOpen },
 ]
 
 export default function Sidebar({ currentPage, onPageChange }: SidebarProps) {
